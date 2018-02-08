@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SIMON</title>
+    <link rel="shortcut icon" href="">
+
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+
+</head>
+
+<body>
+    <div class="container">
+        <audio id="gs" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+        <audio id="rs" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+        <audio id="bs" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+        <audio id="ys" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+        <audio id="error" src="http://soundbible.com/mp3/Slap-SoundMaster13-49669815.mp3" preload="auto"></audio>
+        <div id="simon">
+            <div>
+                <div id="one">
+
+                </div>
+                <div class="ver">
+                </div>
+                <div id="two">
+
+                </div>
+            </div>
+            <div class="hor"></div>
+            <div>
+                <div id="three">
+
+                </div>
+                <div class="ver">
+                </div>
+                <div id="four">
+
+                </div>
+            </div>
+            <div id="center">
+                <div id="innerCenter">
+                    <div><span>simon</span></div>
+
+                    <div id="controls">
+                        <div id="cont">
+                            <div>--</div>
+                            <div>COUNT</div>
+                        </div>
+                        <div id="start">
+                            <div>
+                                <div id="startBtn"></div>
+                            </div>
+                            <div>START</div>
+                        </div>
+                        <div id="strict">
+                            <div>
+                                <div id="strictBtn"></div>
+                                <div id="strictOn"></div>
+                            </div>
+                            <div>STRICT</div>
+                        </div>
+                    </div>
+                    <div id="on">
+                        <div>
+                            <span class="fa fa-power-off"></span>
+                        </div>
+                        <div id="onOff"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="simon.js"></script>
+</body>
+
+</html>

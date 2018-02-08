@@ -1,0 +1,226 @@
+#simon{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    border-radius: 100%;
+    background-color: #333333;
+    padding: 35px;
+    position: relative;
+}
+
+body{
+    background-color: rgba(190, 51, 162, 0.84);
+}
+
+#simon >div:nth-child(1),
+#simon >div:nth-child(3){
+    height: 46%;
+}
+
+#one{
+    background-color: lightgreen;
+    border-top-left-radius: 100%;
+}
+
+#two{
+    background-color: lightcoral;
+    border-top-right-radius: 100%;
+}
+#three{
+    background-color: skyblue;
+    border-bottom-left-radius: 100%;
+}
+#four{
+    background-color: lightgoldenrodyellow;
+    border-bottom-right-radius: 100%;
+}
+#one, #two,
+#three, #four{
+    height: 100%;
+    width: 46%;
+    float: left;
+    box-sizing: border-box;
+    //cursor: pointer;
+}
+
+.ver{
+    width: 8%;
+    float: left;
+    height: 100%;
+}
+
+.hor{
+    width: 100%;
+    height: 8% !important;
+}
+
+#center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    background-color: #333333;
+}
+
+#innerCenter{
+    height: 195px;
+    width: 195px;
+    background-color: lightgray;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+#innerCenter > div:nth-child(1){
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    margin-top: 15px;
+}
+
+#innerCenter > div:nth-child(1) span{
+    font-size: 58px;
+    font-weight: bold;
+}
+
+#controls{
+    margin-top: 10px;
+    position: relative;
+}
+
+#controls > div{
+    float: left;
+}
+
+#cont > div:nth-child(1){
+    font-size: 22px;
+    border: solid 2px #333333;
+    padding: 2px 0px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #DC0D29;
+    background-color: #32050C;
+    width: 57px;
+}
+
+#cont > div:nth-child(2){
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#cont{
+    margin-left: 15px;
+    text-align: center;
+}
+
+#start{
+    margin-left: 15px;
+    text-align: center;
+}
+
+#start >div:nth-child(1){
+    height: 36px;
+    position: relative;
+}
+
+#start > div:nth-child(2){
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#startBtn{
+    background-color: red;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    border: solid 3px #333333;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+#start{
+    margin-left: 15px;
+    text-align: center;
+}
+
+#strict{
+    margin-left: 15px;
+    text-align: center;
+}
+
+#strict >div:nth-child(1){
+    height: 36px;
+    position: relative;
+}
+
+#strict > div:nth-child(2){
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#strictBtn{
+    background-color: yellow;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    border: solid 3px #333333;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+#startOn, #strictOn{
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%,-50%);
+    background-color: #333333;
+}
+
+#on > div:nth-child(1){
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 100%;
+    background-color: #9ce2a3;
+    width: 25px;
+    height: 25px;
+    border: solid 2px #333333;
+    cursor: pointer;
+}
+
+#on div:nth-child(2){
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 30px;
+    background-color: #333333;
+}
+
+.fa.fa-power-off{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333333;
+}
